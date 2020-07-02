@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.user-img {
+	margin-top: -80px;
+}
+
+.user-img img {
+	height: 150px;
+	width: 200px;
+}
