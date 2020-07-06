@@ -27,7 +27,7 @@
                     <?php $i = 1; ?>
                     <?php foreach ($laporan as $l) :
                         if ($l['status'] == '1') {
-                            $sts = "<td class='text-warning'>Pending</td>";
+                            $sts = "<td class='text-warning'>Dikirim</td>";
                         } elseif ($l['status'] == '2') {
                             $sts = "<td class='text-primary'>Diproses</td>";
                         } elseif ($l['status'] == '3') {
@@ -37,7 +37,7 @@
                         };
 
                         if ($status = $l['status'] == '1') {
-                            $st = 'Pending';
+                            $st = 'Dikirim';
                         } elseif ($status = $l['status'] == '2') {
                             $st = 'Diproses';
                         } elseif ($status = $l['status'] == '3') {

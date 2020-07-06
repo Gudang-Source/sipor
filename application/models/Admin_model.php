@@ -32,4 +32,10 @@ class Admin_model extends CI_Model
     {
         $this->db->insert('contact', $data);
     }
+
+    public function get_detail($id = NULL)
+    {
+        $query = $this->db->get_where('laporan', array('id' => $id))->row();
+        return $query;
+    }
 }

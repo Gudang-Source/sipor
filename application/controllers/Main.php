@@ -55,4 +55,11 @@ class Main extends CI_Controller
             redirect('main/contact');
         }
     }
+    function detail($id)
+    {
+        $detail = $this->model->get_detail($id);
+        $data['detail'] = $detail;
+        $data['title'] = 'SIPOR Bandung';
+        $this->load->view('home/detail', $data);
+    }
 }

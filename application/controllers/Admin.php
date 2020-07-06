@@ -153,4 +153,17 @@ class Admin extends CI_Controller
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Pengajuan berhasil diterima!</div>');
         redirect('admin/laporan', 'refresh');
     }
+    public function contact()
+    {
+        $data['title'] = 'Pesan Masuk';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['contact'] = $this->db->get('contact')->result_array();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('admin/contact', $data);
+        $this->load->view('templates/footer');
+    }
 }

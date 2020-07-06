@@ -2,7 +2,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Web Programming UNPAS <?= date('Y'); ?></span>
+                        <span>Copyright &copy; SIPOR Bandung <?= date('Y'); ?></span>
                     </div>
                 </div>
             </footer>
@@ -109,6 +109,21 @@
                     });
 
                 });
+                $(document).ready(function() {
+                    $(document).on('click', '#detailPesanModel', function() {
+                        let nama = $(this).attr('data-nama');
+                        let email = $(this).attr('data-email');
+                        let subjek = $(this).attr('data-subjek');
+                        let pesan = $(this).attr('data-pesan');
+
+                        $('#nama').text(nama);
+                        $('#email').text(email);
+                        $('#subjek').text(subjek);
+                        $('#pesan').text(pesan);
+                    });
+
+                });
+
 
 
                 // Update status

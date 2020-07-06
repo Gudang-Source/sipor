@@ -37,9 +37,9 @@
             </div>
         </div>
         <div class="row block-9">
+            <?= $this->session->flashdata('message'); ?>
             <div class="col-md-6 pr-md-5">
-                <?= $this->session->flashdata('message'); ?>
-                <form action="<?= base_url('main/kirimPesan'); ?>">
+                <form action="<?= base_url('main/kirimPesan'); ?>" method="POST">
                     <div class="form-group">
                         <input type="text" name="nama" class="form-control" placeholder="Your Name">
                         <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>

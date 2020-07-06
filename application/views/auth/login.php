@@ -2,7 +2,7 @@
     <div class="container mt-5">
         <div class="login-content">
             <div class="user-img col-12">
-                <img class="float-right" src="<?= base_url('assets/'); ?>img/icon.jpeg" alt="">
+                <img class="float-right" src="<?= base_url('assets/'); ?>img/logo2.png" alt="" style="height: 200px;">
             </div>
             <div class="login-form">
                 <div class="text-center">
@@ -31,7 +31,7 @@
                     <!-- <p><a style="color:black " href="<?= base_url('auth/forgotpassword'); ?>">Lupa Password?</a></p> -->
                     <p><a style="color:black " href="<?= base_url('main'); ?>">Back to Home</a></p>
 
-                    <!-- <p>Belum punya akun? <a style="color:black" href="<?= base_url('auth/registration') ?>"> Registrasi disini</a></p> -->
+                    <p>Belum punya akun? <a style="color:black" href="<?= base_url('auth/registration') ?>"> Registrasi disini</a></p>
                 </div>
             </div>
         </div>
