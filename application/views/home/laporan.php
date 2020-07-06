@@ -3,12 +3,12 @@
 
 <section class="ftco-section-parallax ftco-degree-bg">
     <div class="parallax-img d-flex align-items-center">
-        <div class="container">
-            <h1 class="mb-4">Data laporan
+        <div class="container mt-5">
+            <h2 class="mb-4" style="color: white;">Data laporan
                 <strong class="typewrite" data-period="4000" data-type='[ "Kesehatan.", "Lingkungan.", "Fasilitas Umum."]'>
                     <span class="wrap"></span>
                 </strong>
-            </h1>
+            </h2>
             <div class="row">
                 <?php foreach ($laporan as $row) :
                     if ($row->status == '1') {

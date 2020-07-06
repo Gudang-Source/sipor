@@ -11,14 +11,14 @@
                     <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_un7IpQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" hover loop autoplay></lottie-player>
                 </div>
                 <div class="col-md-9 ftco-animate text-center">
-                    <h1 class="mb-4" style="color: black;">Mari Laporkan
+                    <h1 class="mb-4" style="color: white;">Mari Laporkan
                         <strong class="typewrite" data-period="4000" data-type='[ "Kesehatan.","Lingkungan.", "Fasilitas Umum.", "Pelanggaran." ]'>
                             <span class="wrap"></span>
                         </strong>
                     </h1>
-                    <p style="color: black;">Kota Bandung masih punya banyak tantangan untuk dihadapi. Mulai dari masalah sampah, parkir liar, fasilitas umum yang rusak, dan lain-lain. Terbayang repotnya petugas pemerintah kalau harus menyisir semua daerah Kota Bandung. Mari sama-sama kita bangun Kota Bandung. <br>
+                    <p style="color: white;">Kota Bandung masih punya banyak tantangan untuk dihadapi. Mulai dari masalah sampah, parkir liar, fasilitas umum yang rusak, dan lain-lain. Terbayang repotnya petugas pemerintah kalau harus menyisir semua daerah Kota Bandung. Mari sama-sama kita bangun Kota Bandung. <br>
                         <strong>Download Aplikasi SIPOR</strong> untuk Kota Bandung yang lebih baik</p>
-                    <p style="color: black;"><a href="#" class="btn btn-primary btn-outline-white px-4 py-3"><span class="ion-ios-play mr-2" style="color: black;"></span>
+                    <p style="color: black ;"><a href="#" class="btn btn-primary btn-outline-white px-4 py-3"><span class="ion-ios-play mr-2" style="color: black;"></span>
                             Download Now</a></p>
                 </div>
             </div>
@@ -56,11 +56,11 @@
 <section class="ftco-section-parallax ftco-degree-bg">
     <div class="parallax-img d-flex align-items-center">
         <div class="container">
-            <h1 class="mb-4">Data laporan
-                <strong class="typewrite" data-period="4000" data-type='[ "Kesehatan.", "Lingkungan.", "Fasilitas Umum."]'>
+            <h2 class="mb-4" style="color: white;">Data laporan
+                <strong class=" typewrite" data-period="4000" data-type='[ "Kesehatan.", "Lingkungan.", "Fasilitas Umum."]'>
                     <span class="wrap"></span>
                 </strong>
-            </h1>
+            </h2>
             <div class="row">
                 <?php foreach ($laporan as $row) :
                     if ($row->status == '1') {
