@@ -15,20 +15,32 @@ class Main extends CI_Controller
     {
         $data = array(
             'title' => 'SIPOR Bandung',
-            'laporan' => $this->model->getAll()
+            'laporan' => $this->model->getLaporan()
         );
         $this->load->view('home/index', $data);
     }
+
     function contact()
     {
         $data['title'] = 'SIPOR Bandung';
         $this->load->view('home/contact', $data);
     }
+
     function about()
     {
         $data['title'] = 'SIPOR Bandung';
         $this->load->view('home/about', $data);
     }
+
+    function laporan()
+    {
+        $data = array(
+            'title' => 'SIPOR Bandung',
+            'laporan' => $this->model->getAll()
+        );
+        $this->load->view('home/laporan', $data);
+    }
+
     function kirimPesan()
     {
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim');

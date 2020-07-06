@@ -18,6 +18,13 @@ class Admin_model extends CI_Model
     public function getAll()
     {
         $this->db->order_by('id', 'DESC');
+        $query = $this->db->get('laporan');
+        return $query->result();
+    }
+
+    public function getLaporan()
+    {
+        $this->db->order_by('id', 'DESC');
         $this->db->limit('8');
         $query = $this->db->get('laporan');
         return $query->result();
