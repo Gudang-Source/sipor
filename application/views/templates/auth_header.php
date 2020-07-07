@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- ubah favicon xampp -->
-    <link rel="icon" type="image/png" href="<?= base_url('assets/images/tkj.png'); ?>" />
+    <link rel="icon" href="<?= base_url('assets/img/'); ?>icon.jpeg" type="image/ico">
 
 
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendor/bootstrap/bootstrap.min.css">

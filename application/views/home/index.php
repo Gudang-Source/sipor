@@ -33,17 +33,17 @@
             <div class="col-md-12">
                 <div class="carousel owl-carousel">
                     <div class="item">
-                        <a href="portfolio.html">
+                        <a href="<?= base_url() ?>">
                             <img src="<?= base_url('assets/home/') ?>images/slider1.jpg" class="img-fluid" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="portfolio.html">
+                        <a href="<?= base_url() ?>">
                             <img src="<?= base_url('assets/home/') ?>images/slider2.jpg" class="img-fluid" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="portfolio.html">
+                        <a href="<?= base_url() ?>">
                             <img src="<?= base_url('assets/home/') ?>images/slider3.jpg" class="img-fluid" alt="">
                         </a>
                     </div>

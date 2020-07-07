@@ -96,7 +96,7 @@
                         let tgl = $(this).attr('data-tgl');
                         let type = $(this).attr('data-type');
 
-                        $('#gbr').attr("src", "<?= base_url('assets/img/laporan/') ?>" + gambar);
+                        $('#gbr').attr("src", gambar);
                         $('#alamat').text(alamat);
                         $('#email').text(email);
                         $('#jenis').text(jenis);
